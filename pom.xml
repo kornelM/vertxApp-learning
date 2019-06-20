@@ -59,6 +59,14 @@
             <artifactId>vertx-config</artifactId>
             <version>3.7.1</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.vertx/vertx-web -->
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+            <version>3.7.1</version>
+        </dependency>
+
     </dependencies>
 
 
