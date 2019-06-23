@@ -4,7 +4,6 @@ import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.json.JsonObject;
-import io.vertx.ext.unit.Async;
 import io.vertx.ext.unit.TestContext;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
 import io.vertx.ext.web.client.HttpResponse;
@@ -26,7 +25,6 @@ public class AppTest {
     public void setUp(TestContext context) throws IOException {
         vertx = Vertx.vertx();
 
-        // Pick an available and random
         ServerSocket socket = new ServerSocket(0);
         port = socket.getLocalPort();
         socket.close();
